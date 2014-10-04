@@ -24,7 +24,7 @@ alias mtq='JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents
 alias pro='tmuxinator start'
 alias mux='tmuxinator start'
 
-alias gtags='ctags -f ./tags -R --langmap="ruby:+.rake.builder.jbuilder.rjs" --languages=-javascript ./ $GEM_HOME'
+alias tags='ctags -f ./tags -R --langmap="ruby:+.rake.builder.jbuilder.rjs" --languages=-javascript ./ $GEM_HOME'
 
 alias jenkins='java -jar ~/lib/jenkins-cli.jar -s https://ci.ncsasports.org/'
 
@@ -33,4 +33,3 @@ alias vimr='open -a VimR'
 # Emacs daemon mode
 alias ec='/usr/bin/env emacsclient -c -a "" -n'
 alias et='/usr/bin/env emacsclient -t -a ""'
-

@@ -33,3 +33,6 @@
 	autosquash = true
 [push]
 	default = simple
+[user]
+	name = Shane Mook
+	email = smook@ncsasports.org
