@@ -1,0 +1,11 @@
+#!/bin/sh
+
+cd ~/.dotfiles
+git add .
+git commit -m"Updated config `date`"
+git push origin master
+
+cd ~/.zprezto
+git add .
+git commit  -m"Updated config `date`"
+git push origin master

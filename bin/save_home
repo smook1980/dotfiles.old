@@ -1,0 +1,10 @@
+#!/bin/sh
+
+cd ~/.dotfiles
+git add .
+git commit -m"Updated config `date`"
+
+
+cd ~/.zprezto
+git add .
+git commit  -m"Updated config `date`"
