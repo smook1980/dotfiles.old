@@ -8,6 +8,7 @@ alias vr='vagrant destroy'
 alias vf='vagrant up || vagrant provision && vagrant ssh'
 
 # Git
+alias git='hub'
 alias gpom='git push origin master'
 
 # Bundler

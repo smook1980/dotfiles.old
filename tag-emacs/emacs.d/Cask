@@ -7,6 +7,8 @@
 (depends-on "anaconda-mode")
 (depends-on "company-anaconda")
 (depends-on "elscreen")
+(depends-on "ggtags")
+(depends-on "helm-gtags")
 (depends-on "ido-vertical-mode")
 (depends-on "paradox")
 (depends-on "projectile-rails")
