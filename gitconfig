@@ -36,3 +36,7 @@
 [user]
 	name = Shane Mook
 	email = smook@ncsasports.org
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
