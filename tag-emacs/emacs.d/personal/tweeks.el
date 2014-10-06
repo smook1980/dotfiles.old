@@ -14,11 +14,14 @@
 ;;; Code:
 
 ;; Custom Packages
-(prelude-require-packages
-  '(cask pallet))
 
 ;; Manage packages with Cask
-(require 'cask)
+(message "Loading Cask and Pallet...")
+
+(require 'cask "/usr/local/Cellar/cask/0.7.2/cask.el")
+(prelude-require-packages
+  '(pallet))
+
 (cask-initialize "~/.emacs.d/")
 
 (require 'pallet)
@@ -145,6 +148,7 @@
 (defadvice inf-ruby-console-auto (before activate-rvm-for-robe activate)
   (rvm-activate-corresponding-ruby))
 
+(require 'company)
 (add-hook 'ruby-mode-hook 'robe-mode)
 (push 'company-robe company-backends)
 
