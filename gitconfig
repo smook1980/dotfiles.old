@@ -17,6 +17,7 @@
 	unstage = reset HEAD
 	rum = rebase master@{u}
 [core]
+	editor = vim
 	pager = less -FXRS -x2
 	excludesfile = /Users/developer/.gitignore_global
 [apply]

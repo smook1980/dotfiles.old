@@ -6,12 +6,5 @@ Host *
   HashKnownHosts no
   ControlMaster auto
   ControlPath ~/.ssh/cm_socket/%r@%h:%p
-  ForwardAgent yes
-
-Host ceph*
-  User ncsaadmin
-  HashKnownHosts no
- # IdentityFile '/Users/smook/.ssh/id_rsa'
-  ControlMaster auto
-  ControlPath ~/.ssh/cm_socket/%r@%h:%p
+  ControlPersist 10m
   ForwardAgent yes

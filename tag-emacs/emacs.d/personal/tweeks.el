@@ -28,6 +28,15 @@
 
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
+(autoload 'color-theme-approximate-on "color-theme-approximate")
+(color-theme-approximate-on)
+(disable-theme 'zenburn)
+
+(require 'powerline)
+(require 'moe-theme)
+(powerline-moe-theme)
+(moe-dark)
+
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 
@@ -67,8 +76,8 @@
  (condition-case nil (scroll-down)
    (beginning-of-buffer (goto-char (point-min))))))
 
-(require 'smart-mode-line)
-(sml/setup)
+;; (require 'smart-mode-line)
+;; (sml/setup)
 
 (require 'ido-vertical-mode)
 (ido-mode 1)

@@ -16,6 +16,9 @@ TAGS
 !TAGS/
 tags
 !tags/
+GPATH
+GRTAGS
+GTAGS
 
 *.sw[nop]
 .bundle
